@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class fourth {
 	public static void main(String[] args) {
+		System.out.println("(1)	Area");
+		System.out.println("(2)	Perimeter");
+		System.out.println("(3)	Draw");
+		System.out.println("(4)	Exit");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Your choice is: ");
 		int c = sc.nextInt();
@@ -33,8 +37,8 @@ public class fourth {
 		return a;
 	}
 	static void repeat(int w, int h, char s) {
-		for (int j = 1; j < h; j++) {
-			for (int i = 0; i < w; i++) {
+		for (int j = 0; j < h; j++) {
+			for (int i = 1; i < w; i++) {
 				System.out.print(s);
 			}
 			System.out.println(s);
